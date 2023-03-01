@@ -4,6 +4,9 @@
     {# dump(search) #}
     <h1>Welcome, página home</h1>
     <div>
+        {{ form(form) }}
+    </div>
+    <div>
         {% for comment in comments %}
             <p>{{ comment.body }}</p>
         {% endfor %}
